@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-blue-300">
+  <div class="max-w-md mx-auto p-7">
+    <% if (country) { %>
+      <h2 class="mb-8 font-extrabold text-stone-100 text-4xl text-cen"><%= country.name.common %></h2>
+
+      <img class="mx-auto w-32 h-20 rounded-md mb-5 shadow-xl"src="<%= country.flags.png %>" alt="country flag" />
+
+      <p class="text-sm mb-3"><strong>Capital:</strong> <%= country.capital[0] %></p>
+      <p class="text-sm mb-3"><strong>Region:</strong> <%= country.region %></p>
+      <p class="text-sm mb-3"><strong>Population:</strong> <%= country.population.toLocaleString() %></p>
+
+      <a class="bg-blue-200 text-white hover:text-red-600" href="<%= country.maps.googleMaps %>" target="_blank">📍 View on Google Maps</a>
+    <% } else { %>
+      <p class="bg-red-700 text-white mx-auto mb-5">Country not found ❌</p>
+    <% } %>
+
+    <br /><br />
+    <a class="text-blue-700 hover:text-green-600"href="/">🔍 Search Another Country</a>
+    <footer Class="bg-blue-300 text-white text-center font-bold">
+    Made by Lakshya
+  </footer>
+  </div>
+</body>
+</html>

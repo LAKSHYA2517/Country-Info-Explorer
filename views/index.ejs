@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-400">
+  <div class="max-w-md mx-auto p-8 mt-20 font-extrabold text-2xl text-center shadow-sm">
+    <h1 class="text-3xl font-bold mb-8">🌍Travel Info Explorer</h1>
+    <form action="/country" method="POST" class="">
+      <input name="country" type="text" class="bg-slate-100 rounded-lg px-2 py-2 focus:ring-blue-800 mb-5" placeholder="Type Country Name here" input required>
+      <button type="submit"  class="bg-orange-500 px-2 py-2 rounded-2xl text-white hover:bg-green-400 shadow-xl">Search</button>
+    </form>
+  </div>
+  <footer Class="bg-slate-400 text-white text-center font-bold">
+    Made by Lakshya
+  </footer>
+</body>
+</html>
