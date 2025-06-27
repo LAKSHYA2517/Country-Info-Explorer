@@ -25,9 +25,7 @@ Tailwind CSS
 REST Countries API
 
 🖥️ Setup Instructions
-Clone the repository:
 
-git clone https://github.com/yourusername/Country-Info-Explorer.git
 
 Navigate into the project folder:
 
